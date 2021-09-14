@@ -1,0 +1,213 @@
+.menu{
+width: 100vw;
+height: 100vh;
+
+overflow: hidden;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.son{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin: 55px;
+
+    background-size: contain;
+   background-repeat: no-repeat;
+   }
+
+.ski_1{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin: 55px;
+    background-image: url(./counter/menuImg/ski.png);
+    background-size: contain;
+   background-repeat: no-repeat;
+   margin-top: 20%;
+}
+
+.ski_2{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 55px;
+    background-image: url(./counter/menuImg/ski.png);
+    background-size: contain;
+   background-repeat: no-repeat;
+}
+.son{
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+100%{
+    transform: rotateZ(360deg);
+}
+}
+
+.ski_1{
+    animation: translate 18s linear infinite;
+}
+
+.ski_2{
+    animation: translate 10s linear infinite;
+}
+@keyframes translate{
+    0%{
+    transform:  translateX(-950px)
+    }
+50%{
+    transform:  translateX(700px)
+}
+100%{
+    transform:  translateX(-950px)
+}
+}
+
+
+.animation{
+    width: 100vw;
+    height: 55vh;
+}
+.startBlock{
+    width: 100vw;
+    height: 45vh;
+    background-image: url(./counter/menuImg/trava.png);
+    background-size: 100% 100%;
+}
+.play{
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btnPlay{
+   width: 252px;
+   height: 94px; 
+   border-radius: 25px;
+   border: none;
+   background-image: url(./counter/menuImg/play.gif);
+   /* background-size: 150% 160%; */
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: 1s;
+
+
+}
+.btnPlay:hover{
+    transform:  scale(1.4);
+}
+
+:root { font-size: 65px; }
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+.textLabel{
+    font-size: 30px;
+    display: flex;
+    margin-top: 28px;  
+    justify-content:flex-end;
+    margin-right: 10px;
+}
+.check {
+	position: relative;
+	background: linear-gradient(90deg, #363636, #252525);
+	line-height: 0;
+	perspective: 400px;
+    margin-top: 45px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after,
+.check {
+	appearance: none;
+	display: inline-block;
+	border-radius: 1rem;
+	border: 0;
+	transition: .35s ease-in-out;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.check label {
+	width: 2.2rem;
+	height: 1rem;
+	background: #78C0FF;
+	overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+	position: absolute;
+	z-index: 1;
+	width: .8rem;
+	height: .8rem;
+	top: .1rem;
+	left: .1rem;
+	background: linear-gradient(45deg, #dedede, #ffffff);
+	box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+	left: 1.3rem;
+}
+
+.check input[type="checkbox"]:checked + label {
+	background: transparent;
+}
+
+.check label::before,
+.check label::after {
+	content: "· ·";
+	position: absolute;
+	overflow: hidden;
+	left: .15rem;
+	top: .5rem;
+	height: 1rem;
+	letter-spacing: -.04rem;
+	color: #9b9b9b;
+	font-family: "Times New Roman", serif;
+	z-index: 2;
+	font-size: .6rem;
+	border-radius: 0;
+	transform-origin: 0 0 -.5rem;
+	backface-visibility: hidden;
+}
+
+.check label::after {
+	content: "●";
+	top: .65rem;
+	left: .3rem;
+	height: .1rem;
+	width: .35rem;
+	font-size: .2rem;
+	transform-origin: 0 0 -.4rem;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+	left: 1.55rem;
+	top: .4rem;
+	line-height: .1rem;
+	transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+	height: .16rem;
+	top: .55rem;
+	left: 1.6rem;
+	font-size: .6rem;
+	line-height: 0;
+}

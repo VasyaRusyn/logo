@@ -1,0 +1,45 @@
+.nav{
+background: rgb(57, 58, 59);
+width: 100vw;
+height: 100vh;
+}
+ .pole{
+    width: 40vw;
+    height: 20vh;
+
+    margin: auto;
+    margin-top: 10%;
+}
+.poleBtn{
+    width: 30%;
+    height: 70%;
+    font-size: 80px;
+    color: blue;
+    margin: 10px;
+    background:#00ccff ;
+    border-radius: 35px;
+    color: white;
+    border: none;
+    transition: .5s;
+} 
+.poleBtn:hover{
+    transform:  scale(1.2); 
+}
+
+.menuBtn{
+    width: 230px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-color: hsl(29, 83%, 60%);
+    transition: 1s;
+    perspective: 400px;
+    perspective-origin: left;
+}
+.menuBtn:hover{
+    transform:  rotateY(18deg);
+
+}

@@ -1,0 +1,104 @@
+.row{
+  width: 100vw;
+  height: 100vh;  
+
+  display: flex;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55vw;
+    height: 95vh;
+    margin: auto;
+
+    transition: all 1s;
+    
+  }
+
+  .btn{
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    transition: .15s;
+    transform-style: preserve-3d;
+
+
+  }
+  .newBlock{
+    display: flex;
+    width: 55vw;
+    height: 95vh;
+    margin: auto;
+    background-image: url(./menuImg/mission-complete-that-was-delicious.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+
+  }
+  .flip{
+    transform:rotateY(180deg)
+  }
+
+  .backBtn{
+    width: 230px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 50px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 20px;
+    background-color: hsl(29, 83%, 60%);
+    transition: 1s;
+    perspective: 400px;
+    perspective-origin: left;
+    float: right;
+
+    margin-right: 40px;
+}
+.counter{
+  width: 230px;
+  height: 100px;
+  margin-top: 85%;
+  margin-left: 45px;
+  color: black;
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+}
+.counteFinish{
+  width: 230px;
+  height: 100px;
+  margin-top: 85%;
+  margin-left: 45px;
+  color: black;
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 20%;
+  margin-left: 18%;
+}
+
+.counterTime{
+  width: 230px;
+  height: 100px;
+  margin-top: 115%;
+  margin-left: 45px;
+  color: black;
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+}
